@@ -4,7 +4,8 @@
       <static>false</static>
       <pose>0 0 0.01 0 0 0</pose>
       <link name="chassis">
-         <pose>0 0 0.01 0 0 0</pose>
+         <!--pose>0 0 0.01 0 0 0</pose-->
+	 <pose>0 0 0.3 0 0 0</pose>
          <inertial>
             <mass>31</mass>
             <pose>0 0 0 0 0 0</pose>
@@ -20,10 +21,14 @@
          <collision name="collision">
             <pose>0 0 0 0 0 0</pose>
             <geometry>
-               <mesh>
-                  <scale>1.5 1.5 1.6</scale>
+               <!--mesh>
+                  <scale>0.9765 0.9765 1.302</scale>
                   <uri>file://meshes/nubot_frame_collision.dae</uri>
-               </mesh>
+               </mesh-->
+	       <cylinder>
+                  <radius>0.10</radius>
+                  <length>0.6</length>
+               </cylinder>
             </geometry>
             <surface>
                <bounce>
@@ -38,13 +43,22 @@
             </surface>
          </collision>
          <visual name="visual">
-            <pose>0 0 0 0 0 0</pose>
+            <!--pose>0 0 0 0 0 0</pose-->
+	    <pose>0 0.04 -0.68 0 0 1.57</pose>
             <geometry>
                <mesh>
-                  <scale>1.5 1.5 1.6</scale>
-                  <uri>file://meshes/nubot_frame/nubot_frame2.dae</uri>
+                  <!--scale>0.9765 0.9765 1.302</scale-->
+		  <scale>0.001 0.001 0.001</scale>
+    		  <uri>file://meshes/nubot_frame/robot6th.stl</uri>
+                  <!--uri>file://meshes/nubot_frame/nubot_frame2.dae</uri-->
                </mesh>
             </geometry>
+	     <material>
+	       <script>
+		  <uri>file://media/materials/scripts/gazebo.material</uri>
+		  <name>Gazebo/Blue</name>
+    	       </script>
+	     </material>
          </visual>
          <velocity_decay>
             <linear>0</linear>

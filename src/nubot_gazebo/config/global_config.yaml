@@ -7,15 +7,15 @@ general:
 
 cyan:
   prefix: "nubot"             # Nubot name prefix. Linked with model name; don't change
-  num: 5
+  num: 3
  
 magenta:
   prefix: "rival"            # Rival name prefix. Linked with model name; don't change
-  num: 5
+  num: 3
 
 field:
-  length: 18                     # Use integer!   used in spawn_model_script
-  width: 12                      # Use integer!  used in spawn_model_script
+  length: 6                     # Use integer!   used in spawn_model_script
+  width: 4                      # Use integer!  used in spawn_model_script
   
 football:
   name: "football"                   # football model name

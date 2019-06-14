@@ -2994,9 +2994,9 @@
         </effect>
     </library_effects>
     <library_images>
-        <image id="ID175">
+        <!--<image id="ID175">
             <init_from>nubot_frame3/texture0.jpg</init_from>
-        </image>
+        </image>-->
         <image id="ID366">
             <init_from>nubot_frame3/texture1.png</init_from>
         </image>

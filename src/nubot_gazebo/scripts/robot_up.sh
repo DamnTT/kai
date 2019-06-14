@@ -8,9 +8,9 @@ football_name=$(rosparam get /football/name)
 magenta_prefix=$(rosparam get /magenta/prefix)
 cyan_prefix=$(rosparam get /cyan/prefix)
 		                               
-cyan_x=(0 -8.5 -2 -2 -5 -5 )  # the first one is for goal-keeper
+cyan_x=(0 -2.78 -1.5 -1.5 -5 -5 )  # the first one is for goal-keeper
 cyan_y=(0 0 1 -1 2 -2 )       # the first one is for goal-keeper 
-magenta_x=(0 8.5 2 2 5 5)      # the first one is not useful now
+magenta_x=(0 2.78 1.5 1.5 5 5)      # the first one is not useful now
 magenta_y=(0 0 1 -1 2 -2 )     # the first one is not useful now-keeper
 
 ### spawn the football
